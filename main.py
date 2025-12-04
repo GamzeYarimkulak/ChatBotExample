@@ -85,7 +85,7 @@ def chat():
   messages = client.beta.threads.messages.list(thread_id=thread_id)
   response = messages.data[0].content[0].text.value
 
-  print(f"Assistant response: {response}")
+  print(f"Assistant response!: {response}")
   return jsonify({"response": response})
 
 
